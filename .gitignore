@@ -1,0 +1,5 @@
+__pycache__
+.wolf*
+pyproject.toml
+poetry.lock
+*.csv

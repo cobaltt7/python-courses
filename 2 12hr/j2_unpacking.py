@@ -1,0 +1,5 @@
+thing = (0, "apple")
+print(thing)
+index, fruit = (0, "apple")
+print(index)
+print(fruit)

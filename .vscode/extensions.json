@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"streetsidesoftware.code-spell-checker",
+		"ms-python.isort",
+		"ms-toolsai.jupyter",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"trabpukcip.wolf"
+	]
+}

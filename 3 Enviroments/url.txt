@@ -1,0 +1,12 @@
+# pip
+https://www.youtube.com/watch?v=SrX5yo4KKGM
+https://www.youtube.com/watch?v=U2ZN104hIcc
+
+# Conda
+https://www.youtube.com/watch?v=23aQdrS58e0
+
+# Poetry
+https://www.youtube.com/watch?v=Ib7fNOIGM7E
+
+# pip with virtual envs
+https://docs.python-guide.org/dev/virtualenvs/
