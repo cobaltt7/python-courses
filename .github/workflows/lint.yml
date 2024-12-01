@@ -23,7 +23,7 @@ jobs:
             - name: Format
               uses: psf/black@b965c2a5026f8ba399283ba3e01898b012853c79
               with:
-                  options: ""
+                  options: "--preview --unstable -C"
                   jupyter: true
 
             - name: Assert clean
