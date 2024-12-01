@@ -1,22 +1,20 @@
 import pandas as pd
 import numpy as np
 
-df = pd.DataFrame(
-    {
-        "first": ["Corey", "Jane", "John", "Chris", np.nan, None, "NA"],
-        "last": ["Schafer", "Doe", "Doe", "Schafer", np.nan, np.nan, "Missing"],
-        "email": [
-            "CoreyMSchafer@gmail.com",
-            "JaneDoe@email.com",
-            "JohnDoe@email.com",
-            None,
-            np.nan,
-            ...,
-            "A@email.com",
-        ],
-        "age": ["33", "55", "63", "36", None, None, "Missing"],
-    }
-)
+df = pd.DataFrame({
+    "first": ["Corey", "Jane", "John", "Chris", np.nan, None, "NA"],
+    "last": ["Schafer", "Doe", "Doe", "Schafer", np.nan, np.nan, "Missing"],
+    "email": [
+        "CoreyMSchafer@gmail.com",
+        "JaneDoe@email.com",
+        "JohnDoe@email.com",
+        None,
+        np.nan,
+        ...,
+        "A@email.com",
+    ],
+    "age": ["33", "55", "63", "36", None, None, "Missing"],
+})
 
 print(df)
 print(df.dropna())

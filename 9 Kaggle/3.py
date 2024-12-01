@@ -26,20 +26,18 @@ df.rename(
 
 # Reorder columns
 
-df = df[
-    [
-        "id",
-        "name",
-        "position",
-        "department",
-        "authority",
-        "state",
-        "net",
-        "gross",
-        "reporting_start",
-        "reporting_end",
-    ]
-]
+df = df[[
+    "id",
+    "name",
+    "position",
+    "department",
+    "authority",
+    "state",
+    "net",
+    "gross",
+    "reporting_start",
+    "reporting_end",
+]]
 df.set_index("id")
 
 # Strip ALL fields

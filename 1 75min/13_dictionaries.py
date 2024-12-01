@@ -13,6 +13,4 @@ for key, value in x.items():
     print(key, value)
 
 for key in x:
-    print(
-        key,
-    )
+    print(key)

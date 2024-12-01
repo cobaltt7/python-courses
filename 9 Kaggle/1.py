@@ -63,15 +63,7 @@ df["stars"] = stars
 df.drop_duplicates(
     inplace=True,
     keep="first",
-    subset=[
-        "years",
-        "genres",
-        "rating",
-        "stars",
-        "votes",
-        "run_time",
-        "directors",
-    ],
+    subset=["years", "genres", "rating", "stars", "votes", "run_time", "directors"],
 )
 # --
 df.reset_index(inplace=True)

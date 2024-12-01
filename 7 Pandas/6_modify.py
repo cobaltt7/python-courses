@@ -1,12 +1,10 @@
 import pandas as pd
 
-df = pd.DataFrame(
-    {
-        "first": ["Corey", "Jane", "John"],
-        "last": ["Schafer", "Doe", "Doe"],
-        "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"],
-    }
-)
+df = pd.DataFrame({
+    "first": ["Corey", "Jane", "John"],
+    "last": ["Schafer", "Doe", "Doe"],
+    "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"],
+})
 
 print(df.columns)
 df.columns = ["FIRST NAME", "LAST NAME", "EMAIL"]

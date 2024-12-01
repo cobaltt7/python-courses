@@ -1,17 +1,15 @@
 import pandas as pd
 
-df = pd.DataFrame(
-    {
-        "first": ["Corey", "Jane", "John", "Adam"],
-        "last": ["Schafer", "Doe", "Doe", "Doe"],
-        "email": [
-            "CoreyMSchafer@gmail.com",
-            "JaneDoe@email.com",
-            "JohnDoe@email.com",
-            "A@email.com",
-        ],
-    }
-)
+df = pd.DataFrame({
+    "first": ["Corey", "Jane", "John", "Adam"],
+    "last": ["Schafer", "Doe", "Doe", "Doe"],
+    "email": [
+        "CoreyMSchafer@gmail.com",
+        "JaneDoe@email.com",
+        "JohnDoe@email.com",
+        "A@email.com",
+    ],
+})
 
 print(df.sort_values(by="last"))
 print(df.sort_values(by="last", ascending=False))

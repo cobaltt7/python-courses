@@ -14,11 +14,7 @@ def get_user(user_name):
         user = filtered[0]
         user["logins"] += 1
     else:
-        user = {
-            "user_name": user_name,
-            "logins": 1,
-            "dogs_generated": 0,
-        }
+        user = {"user_name": user_name, "logins": 1, "dogs_generated": 0}
         USERS.append(user)
     return user
 
