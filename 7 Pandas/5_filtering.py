@@ -1,10 +1,12 @@
 import pandas as pd
 
-people = pd.DataFrame({
-    "first": ["Corey", "Jane", "John"],
-    "last": ["Schafer", "Doe", "Doe"],
-    "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"],
-})
+people = pd.DataFrame(
+    {
+        "first": ["Corey", "Jane", "John"],
+        "last": ["Schafer", "Doe", "Doe"],
+        "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"],
+    }
+)
 
 print("\nfilter obj\n", people["last"] == "Doe")
 print("\nfiltering\n", people[people["last"] == "Doe"])

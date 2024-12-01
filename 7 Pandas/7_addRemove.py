@@ -1,10 +1,12 @@
 import pandas as pd
 
-df = pd.DataFrame({
-    "first": ["Corey", "Jane", "John"],
-    "last": ["Schafer", "Doe", "Doe"],
-    "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"],
-})
+df = pd.DataFrame(
+    {
+        "first": ["Corey", "Jane", "John"],
+        "last": ["Schafer", "Doe", "Doe"],
+        "email": ["CoreyMSchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"],
+    }
+)
 
 print(df["first"] + " " + df["last"])
 df["name"] = df["first"] + " " + df["last"]
@@ -22,11 +24,13 @@ df.loc[len(df)] = {"first": "Tony"}
 
 print(df)
 
-df2 = pd.DataFrame({
-    "first": ["Tony", "Steve"],
-    "last": ["Stark", "Rogers"],
-    "email": ["IronMan@avenge.com", "Cap@avenge.com"],
-})
+df2 = pd.DataFrame(
+    {
+        "first": ["Tony", "Steve"],
+        "last": ["Stark", "Rogers"],
+        "email": ["IronMan@avenge.com", "Cap@avenge.com"],
+    }
+)
 print(df, df2)
 
 print(pd.concat([df, df2], ignore_index=True))

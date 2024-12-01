@@ -5,8 +5,10 @@ def introducer(person):
     )
 
 
-introducer({
-    "name": "Paul",
-    "shirt": "black",
-    "laptop": "Windows",
-})
+introducer(
+    {
+        "name": "Paul",
+        "shirt": "black",
+        "laptop": "Windows",
+    }
+)
