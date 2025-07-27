@@ -1,11 +1,1 @@
-{
-    "ignorePaths": ["3 Enviroments/**"],
-    "packageRules": [
-        {
-            "matchFileNames": ["3 Enviroments/**"],
-            "groupName": "example dependencies",
-            "automerge": true,
-            "automergeType": "branch"
-        }
-    ]
-}
+{ "ignorePaths": ["3 Enviroments/**"] }
