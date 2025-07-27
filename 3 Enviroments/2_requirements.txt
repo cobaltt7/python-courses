@@ -11,7 +11,7 @@ Flask-Cors==6.0.1
 fonttools==4.43.0
 idna==3.7
 ijson==3.1.4
-itsdangerous==2.1.2
+itsdangerous==2.2.0
 Jinja2==3.1.6
 kiwisolver==1.4.4
 MarkupSafe==2.1.2
