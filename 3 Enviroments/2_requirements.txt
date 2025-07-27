@@ -25,7 +25,7 @@ pywin32==305
 requests==2.32.4
 shapely==2.0.0
 six==1.16.0
-soupsieve==2.3.2.post1
+soupsieve==2.7
 swaglyrics==1.2.2
 SwSpotify==1.2.1
 Unidecode==1.1.1
