@@ -30,4 +30,4 @@ swaglyrics==1.2.2
 SwSpotify==1.2.1
 Unidecode==1.1.1
 urllib3==2.5.0
-Werkzeug==3.0.6
+Werkzeug==3.1.3
