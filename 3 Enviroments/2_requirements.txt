@@ -29,5 +29,5 @@ soupsieve==2.3.2.post1
 swaglyrics==1.2.2
 SwSpotify==1.2.1
 Unidecode==1.1.1
-urllib3==1.26.19
+urllib3==2.5.0
 Werkzeug==3.0.6
