@@ -1,1 +1,1 @@
-{ "ignorePaths": ["./3 Enviroments/"] }
+{ "ignorePaths": ["./3 Enviroments/**"] }
