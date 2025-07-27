@@ -20,7 +20,7 @@ numpy==1.25.2
 packaging==23.1
 Pillow==10.3.0
 pyparsing==3.0.9
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
 pywin32==305
 requests==2.32.4
 shapely==2.0.0
