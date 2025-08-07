@@ -1,194 +1,194 @@
 * {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	color: #eee;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    color: #eee;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-	background: #1c2333;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #1c2333;
 }
 
 html,
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .cardsContainer {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
-	height: 9rem;
-	width: 44%;
-	text-align: center;
-	padding: 0.2rem;
-	background: #0e1525;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	-ms-flex-direction: column;
-	justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background: #0e1525;
+    padding: 0.2rem;
+    width: 44%;
+    height: 9rem;
+    text-align: center;
 }
 
 .card > :nth-child(1) {
-	font-size: 3rem;
-	text-shadow: rgba(255, 255, 255, 1) 0 0 13px;
+    font-size: 3rem;
+    text-shadow: rgba(255, 255, 255, 1) 0 0 13px;
 }
 
 .card > :nth-child(2) {
-	font-size: 1.6rem;
-	font-weight: 900;
+    font-weight: 900;
+    font-size: 1.6rem;
 }
 
 .card > :nth-child(3) {
-	font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .card:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .wrapper {
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	align-items: center;
-	margin: 2em;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
 }
 
 .header {
-	width: 48rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 48rem;
 }
 
 .header > div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	flex-wrap: wrap;
-	gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
 }
 
 .buttonsContainer {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 form button {
-	margin-left: 1rem;
-	padding: 0.5rem 1rem;
-	cursor: pointer;
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    cursor: pointer;
+    margin-left: 1rem;
+    outline: none;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    background: rgba(144, 0, 238, 0.3);
+    padding: 0.5rem 1rem;
 
-	color: #eee;
-	outline: none;
-	font-weight: bolder;
-	font-size: 1.4rem;
-	background: rgba(144, 0, 238, 0.3);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(2.5px);
-	-webkit-backdrop-filter: blur(2.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #eee;
+    font-weight: bolder;
+    font-size: 1.4rem;
 }
 
 .login-title {
-	font-size: 4rem;
-	margin-bottom: 5rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
 }
 
 .login-form {
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 2.4rem;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
 }
 
 .login-form button {
-	color: #eee;
-	background-color: #9000ee;
-	padding: 1rem 2rem;
-	font-size: 1.4rem;
-	font-weight: 600;
-	background: rgba(144, 0, 238, 0.3);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(2.5px);
-	-webkit-backdrop-filter: blur(2.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    background-color: #9000ee;
+    background: rgba(144, 0, 238, 0.3);
+    padding: 1rem 2rem;
+    color: #eee;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .login-form > input {
-	color: #1c2333;
-	background-color: #eee;
-	outline: none;
-	border: none;
-	padding: 1rem;
-	border-radius: 1rem;
-	font-size: 1.2rem;
-	width: 20rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: #eee;
+    padding: 1rem;
+    width: 20rem;
+    color: #1c2333;
+    font-size: 1.2rem;
 }
 
 .login-form button:hover {
-	transform: scale(1.06);
-	-ms-transform: scale(1.06);
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-	border: 1px solid white;
+    transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 1px solid white;
 }
 
 .leaderboard {
-	width: 46rem;
-	background-color: #0e1525;
-	backdrop-filter: blur(2.5px);
-	-webkit-backdrop-filter: blur(2.5px);
-	border-radius: 10px;
-	overflow: hidden;
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    background-color: #0e1525;
+    width: 46rem;
+    overflow: hidden;
 }
 
 img {
-	object-fit: cover;
+    object-fit: cover;
 }
 
 .login-title {
-	width: 100%;
-	text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 td {
-	padding: 1rem;
+    padding: 1rem;
 }
 
 .titles {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 form > button:hover {
-	transform: scale(1.06);
-	-ms-transform: scale(1.06);
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
-	border: 1px solid #4e5569;
+    transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #4e5569;
 }
 
 #dog:hover {
-	transform: rotate(360deg);
-	-ms-transform: rotate(360deg);
-	transition: all 3s ease;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transition: all 3s ease;
 }
 
 #dog img {
-	border-radius: 10%;
+    border-radius: 10%;
 }

@@ -1,20 +1,21 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
+html,
+body {
     margin: 0;
-    font-family: "SF Compact Display", Helvetica, 'Avenir Next';
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "SF Compact Display", Helvetica, "Avenir Next";
 }
 
 .wrapper {
-    background: #1C2333;
-    color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background: #1c2333;
     width: 100%;
     height: 100%;
-    flex-direction: column;
+    color: white;
 }
 
 .buttonsContainer {
@@ -24,24 +25,23 @@ html, body {
 }
 
 button {
-    height: 100px;
-    width: 100px;
-    font-size: 48px;
-    border-radius: 30px;
     cursor: pointer;
     border: none;
+    border-radius: 30px;
     background: #eee;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
 }
 
 button:hover {
-    background: #777;
     transform: scale(1.1);
-    transition: all .2s;
+    transition: all 0.2s;
+    background: #777;
 }
 
 .resultContainer {
+    margin-top: 20px;
     font-size: 2rem;
     text-align: center;
-    margin-top: 20px;
 }
-
