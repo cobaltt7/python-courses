@@ -1,12 +1,12 @@
 {% macro card(video) -%}
 <div class="card">
-	<img class="thumbnail" src="{{ video['thumbnails'][-1]['url'] }}" />
-	<div class="info">
-		<a href="https://www.youtube.com/watch?v={{ video['videoId'] }}"">{{video['title']}}</a>
-		<p>
-			{{video['publishedTimeText']}} ● {{video['stats']['views'] |
-			numerize}} views
-		</p>
-	</div>
+    <img class="thumbnail" src="{{ video['thumbnails'][-1]['url'] }}" />
+    <div class="info">
+        <a href="https://www.youtube.com/watch?v={{ video['videoId'] }}">{{video['title']}}</a>
+        <p>
+            {{video['publishedTimeText']}} ● {{video['stats']['views'] |
+            numerize}} views
+        </p>
+    </div>
 </div>
 {%- endmacro %}

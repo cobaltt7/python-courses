@@ -1,47 +1,46 @@
 {
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter"
-	},
-	"wolf.disableHotModeWarning": true,
-	"explorer.excludeGitIgnore": true,
-	"editor.formatOnType": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"python.analysis.autoFormatStrings": true,
-	"python.analysis.autoImportCompletions": true,
-	"python.analysis.completeFunctionParens": true,
-	"python.analysis.importFormat": "relative",
-	"python.analysis.inlayHints.callArgumentNames": "partial",
-	"python.analysis.inlayHints.functionReturnTypes": true,
-	"python.analysis.inlayHints.variableTypes": true,
-	"python.analysis.inlayHints.pytestParameters": true,
-	"autopep8.importStrategy": "fromEnvironment",
-	"[toml]": {
-		"editor.defaultFormatter": "tamasfe.even-better-toml"
-	},
-	"[fish]": {
-		"editor.defaultFormatter": "bmalehorn.vscode-fish"
-	},
-	"python.analysis.extraPaths": [
-		"1/.venv/lib/site-packages",
-		"2/.venv/lib/site-packages",
-		"3/.venv/lib/site-packages",
-		"4/.venv/lib/site-packages",
-		"5/.venv/lib/site-packages",
-		"6/.venv/lib/site-packages",
-		"7/.venv/lib/site-packages",
-		"13/.venv/lib/site-packages"
-	],
-	"cSpell.words": ["arange"],
-	"wolf.pythonPath": "C:/Users/paul/OneDrive/science/Technology/Coding/python/13/.venv/Scripts/python.exe",
-	"prettier.useTabs": false,
-	"editor.detectIndentation": false,
-	"pylint.severity": {
-		"convention": "Warning",
-		"refactor": "Warning",
-		"warning": "Error"
-	},
-	"pylint.args": [
-		"--disable=invalid-name",
-		"--disable=missing-module-docstring"
-	]
+    "[python]": {"editor.defaultFormatter": "ms-python.black-formatter"},
+    "wolf.disableHotModeWarning": true,
+    "explorer.excludeGitIgnore": true,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.importFormat": "relative",
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "autopep8.importStrategy": "fromEnvironment",
+    "[toml]": {"editor.defaultFormatter": "tamasfe.even-better-toml"},
+    "[fish]": {"editor.defaultFormatter": "bmalehorn.vscode-fish"},
+    "python.analysis.extraPaths": [
+        "1/.venv/lib/site-packages",
+        "2/.venv/lib/site-packages",
+        "3/.venv/lib/site-packages",
+        "4/.venv/lib/site-packages",
+        "5/.venv/lib/site-packages",
+        "6/.venv/lib/site-packages",
+        "7/.venv/lib/site-packages",
+        "13/.venv/lib/site-packages"
+    ],
+    "cSpell.words": ["arange"],
+    "wolf.pythonPath": "C:/Users/paul/OneDrive/science/Technology/Coding/python/13/.venv/Scripts/python.exe",
+    "prettier.useTabs": false,
+    "editor.detectIndentation": false,
+    "pylint.severity": {
+        "convention": "Warning",
+        "refactor": "Warning",
+        "warning": "Error"
+    },
+    "pylint.args": ["--disable=invalid-name", "--disable=missing-module-docstring"],
+    "djlint.useGitignore": true,
+    "djlint.profile": "jinja",
+    "djlint.pythonPath": ".venv/Scripts/python.exe",
+    "editor.useTabStops": false,
+    "[html]": {
+        "djlint.enableLinting": true,
+        "editor.defaultFormatter": "monosans.djlint"
+    }
 }
