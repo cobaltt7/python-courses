@@ -46,10 +46,10 @@ jobs:
                   repository: ${{github.event.pull_request.head.repo.full_name}}
 
             - name: Setup CodeQL
-              uses: github/codeql-action/init@2d92b76c45b91eb80fc44c74ce3fce0ee94e8f9d # v3.30.0
+              uses: github/codeql-action/init@16140ae1a102900babc80a33c44059580f687047 # v4.30.9
               with:
                   languages: python
                   queries: security-and-quality
 
             - name: Analyze
-              uses: github/codeql-action/analyze@2d92b76c45b91eb80fc44c74ce3fce0ee94e8f9d # v3.30.0
+              uses: github/codeql-action/analyze@16140ae1a102900babc80a33c44059580f687047 # v4.30.9
