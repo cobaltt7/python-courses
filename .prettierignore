@@ -1,2 +1,3 @@
 **.html
 ./7 Pandas/*.json
+.mypy_cache

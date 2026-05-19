@@ -15,7 +15,7 @@ jobs:
         name: Format
         runs-on: ubuntu-24.04
         permissions:
-          contents: write # Needed to push
+            contents: write # Needed to push
 
         steps:
             - name: Checkout
@@ -43,7 +43,7 @@ jobs:
         name: Analyze
         runs-on: ubuntu-24.04
         permissions:
-          security-events: write # Used by github/codeql-action
+            security-events: write # Used by github/codeql-action
 
         steps:
             - name: Checkout
