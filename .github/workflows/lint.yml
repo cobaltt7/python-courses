@@ -1,28 +1,33 @@
 name: Lint
 on:
     push:
-    pull_request_target:
+    pull_request:
     workflow_dispatch:
 
-permissions: write-all
+permissions: {}
+
+concurrency:
+    group: ${{github.workflow}}-${{github.event.pull_request.number||github.ref}}
+    cancel-in-progress: true
 
 jobs:
     format:
         name: Format
         runs-on: ubuntu-24.04
+        permissions:
+          contents: write # Needed to push
 
         steps:
             - name: Checkout
               uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
               with:
-                  token: ${{secrets.TOKEN || secrets.GITHUB_TOKEN}}
-                  ref: ${{github.head_ref}}
-                  repository: ${{github.event.pull_request.head.repo.full_name}}
+                  token: ${{secrets.TOKEN||github.token}}
+                  persist-credentials: true
 
             - name: Format
-              uses: psf/black@05f0a8ce1f71fbb36e1e032d3b518c7b945089a2 # 25.11.0
+              uses: psf/black@35ea67920b7f6ac8e09be1c47278752b1e827f76 # 26.3.0
               with:
-                  options: "--preview --unstable -C"
+                  options: --preview --unstable -C
                   jupyter: true
 
             - name: Assert clean
@@ -37,13 +42,14 @@ jobs:
     analyze:
         name: Analyze
         runs-on: ubuntu-24.04
+        permissions:
+          security-events: write # Used by github/codeql-action
 
         steps:
             - name: Checkout
               uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
               with:
-                  ref: ${{github.head_ref}}
-                  repository: ${{github.event.pull_request.head.repo.full_name}}
+                  persist-credentials: false
 
             - name: Setup CodeQL
               uses: github/codeql-action/init@38697555549f1db7851b81482ff19f1fa5c4fedc # v4.34.1
